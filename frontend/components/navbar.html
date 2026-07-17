@@ -1,0 +1,47 @@
+<!--
+  NAVBAR — canonical source.
+  This exact markup is inlined at the top of <body> in every page
+  (index.html and everything in /pages). Kept here as the single
+  reference copy — if you edit the navbar, edit it here first, then
+  copy the result into each page so all copies stay identical.
+
+  Set aria-current="page" on the link matching the current page and
+  remove it from the others.
+-->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="/index.html" class="navbar__logo">
+      <img src="/assets/images/logo.png" alt="D Fashion Mart" height="40" style="display:block;height:40px;width:auto">
+    </a>
+
+    <nav class="navbar__links" aria-label="Primary">
+      <a href="/index.html" aria-current="page">Home</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/collections.html">Collections</a>
+      <a href="/pages/gallery.html">Gallery</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a class="navbar__call" href="tel:+917905331239">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Call the store</span>
+      </a>
+      <a class="btn btn--primary btn--sm" href="/pages/contact.html">Visit Us</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navPanel">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="navbar__panel" id="navPanel" hidden>
+    <a href="/index.html" aria-current="page">Home</a>
+    <a href="/pages/about.html">About</a>
+    <a href="/pages/collections.html">Collections</a>
+    <a href="/pages/gallery.html">Gallery</a>
+    <a href="/pages/contact.html">Contact</a>
+    <a class="btn btn--primary" href="/pages/contact.html">Visit Us</a>
+  </div>
+</header>

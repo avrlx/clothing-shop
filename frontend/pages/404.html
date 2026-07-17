@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found — D Fashion Mart</title>
+<meta name="description" content="This page could not be found. Head back to D Fashion Mart's home page or browse our collections.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1E2A3D">
+<link rel="icon" href="../assets/favicon/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../assets/favicon/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="../index.html" class="navbar__logo">D Fashion Mart</a>
+    <nav class="navbar__links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="collections.html">Collections</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="navbar__actions">
+      <a class="btn btn--primary btn--sm" href="contact.html">Visit Us</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navPanel"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="navbar__panel" id="navPanel" hidden>
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="collections.html">Collections</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn--primary" href="contact.html">Visit Us</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container error-page">
+    <div>
+      <span class="hang-tag" style="transform:rotate(-4deg);margin-bottom:var(--space-6)">Out of Stock</span>
+      <div class="error-page__code">404</div>
+      <h2 style="margin-top:var(--space-5)">This page has been returned to stock.</h2>
+      <p class="lead" style="margin-inline:auto;margin-top:var(--space-4)">The link you followed may be broken, or the page may have moved. Let's get you back to browsing.</p>
+      <div class="error-page__actions">
+        <a class="btn btn--primary" href="../index.html">Back to Home</a>
+        <a class="btn btn--secondary" href="collections.html">Browse Collections</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom" style="border-top:0;padding-top:0">
+      <span>© <span id="year">2026</span> D Fashion Mart. All rights reserved.</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta-bar" role="group" aria-label="Quick contact">
+  <a href="tel:+917905331239">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a href="https://wa.me/917905331239" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L4 20l1.03-4.46A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 10a1 1 0 0 0 1 1 3 3 0 0 0 3 3 1 1 0 0 0 1-1"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<script src="../utils/dom-helpers.js" defer></script>
+<script src="../js/main.js" defer></script>
+<script defer>document.addEventListener('DOMContentLoaded', function () { document.getElementById('year').textContent = new Date().getFullYear(); });</script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collections — D Fashion Mart</title>
+<meta name="description" content="Browse D Fashion Mart's current in-store collection — ethnic wear, western wear, and footwear for men and women. New stock every week.">
+<link rel="canonical" href="collections.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Collections — D Fashion Mart">
+<meta property="og:description" content="Browse D Fashion Mart's current in-store collection by category.">
+<meta property="og:image" content="../assets/images/og-share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1E2A3D">
+<link rel="icon" href="../assets/favicon/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../assets/favicon/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Collections" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="../index.html" class="navbar__logo">D Fashion Mart</a>
+    <nav class="navbar__links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="collections.html" aria-current="page">Collections</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="navbar__actions">
+      <a class="navbar__call" href="tel:+917905331239">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Call the store</span>
+      </a>
+      <a class="btn btn--primary btn--sm" href="contact.html">Visit Us</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navPanel"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="navbar__panel" id="navPanel" hidden>
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="collections.html" aria-current="page">Collections</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn--primary" href="contact.html">Visit Us</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a> / <span aria-current="page">Collections</span>
+    </nav>
+    <div class="page-header">
+      <span class="eyebrow">In store now</span>
+      <h1>The current collection.</h1>
+    </div>
+
+    <div class="filter-bar flex-between" role="group" aria-label="Filter by category">
+      <div class="flex" style="gap:var(--space-3);flex-wrap:wrap">
+        <button class="chip" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="ethnic-women" aria-pressed="false">Ethnic · Women</button>
+        <button class="chip" data-filter="ethnic-men" aria-pressed="false">Ethnic · Men</button>
+        <button class="chip" data-filter="western-women" aria-pressed="false">Western · Women</button>
+        <button class="chip" data-filter="western-men" aria-pressed="false">Western · Men</button>
+        <button class="chip" data-filter="footwear" aria-pressed="false">Footwear</button>
+      </div>
+      <button class="btn btn--ghost" style="flex-shrink:0" data-modal-open="sizeGuideModal">Size Guide</button>
+    </div>
+  </div>
+
+  <section class="container section--tight" aria-label="Products">
+    <div class="grid products-grid">
+      <a class="product-card" href="#" data-category="ethnic-women" data-reveal>
+        <div class="product-card__frame"><img src="https://placehold.co/500x625/8C3F2C/FBFAF6?text=Saree" alt="Traditional designer saree" loading="lazy" width="500" height="625" data-fade></div>
+        <div class="product-card__body"><span class="product-card__category">Ethnic · Women</span><h3 class="product-card__title">Designer Saree</h3></div>
+      </a>
+      <a class="product-card" href="#" data-category="ethnic-women" data-reveal data-reveal-delay="40">
+        <div class="product-card__frame"><img src="https://placehold.co/500x625/1E2A3D/ECE8DE?text=Lehenga" alt="Anarkali lehenga" loading="lazy" width="500" height="625" data-fade></div>
+        <div class="product-card__body"><span class="product-card__category">Ethnic · Women</span><h3 class="product-card__title">Anarkali Lehenga</h3></div>
+      </a>
+      <a class="product-card" href="#" data-category="ethnic-women" data-reveal data-reveal-delay="80">
+        <div class="product-card__frame"><img src="https://placehold.co/500x625/2A2420/ECE8DE?text=Kurti" alt="Kurti and kurta set" loading="lazy" width="500" height="625" data-fade></div>
+        <div class="product-card__body"><span class="product-card__category">Ethnic · Women</span><h3 class="product-card__title">Kurti & Kurta Set</h3></div>
+      </a>
+      <a class="product-card" href="#" data-category="ethnic-men" data-reveal data-reveal-delay="120">
+        <div class="product-card__frame"><img src="https://placehold.co/500x625/78876F/FBFAF6?text=Sherwani" alt="Sherwani and indo-western suit" loading="lazy" width="500" height="625" data-fade></div>
+        <div class="product-card__body"><span class="product-card__category">Ethnic · Men</span><h3 class="product-card__title">Sherwani</h3></div>
+      </a>
+      <a class="product-card" href="#" data-category="ethnic-men" data-reveal data-reveal-delay="160">
+        <div class="product-card__frame"><img src="https://placehold.co/500x625/8C3F2C/FBFAF6?text=Kurta+Pyjama" alt="Kurta and pyjama set" loading="lazy" width="500" height="625" data-fade></div>
+        <div class="product-card__body"><span class="product-card__category">Ethnic · Men</span><h3 class="product-card__title">Kurta & Pyjama</h3></div>
+      </a>
+      <a class="product-card" href="#" data-category="western-women" data-reveal data-reveal-delay="200">
+        <div class="product-card__frame"><img src="https://placehold.co/500x625/1E2A3D/ECE8DE?text=Dress" alt="Western dress" loading="lazy" width="500" height="625" data-fade></div>
+        <div class="product-card__body"><span class="product-card__category">Western · Women</span><h3 class="product-card__title">Dresses & Jumpsuits</h3></div>
+      </a>
+      <a class="product-card" href="#" data-category="western-men" data-reveal>
+        <div class="product-card__frame"><img src="https://placehold.co/500x625/2A2420/ECE8DE?text=Shirts" alt="Casual and formal shirts" loading="lazy" width="500" height="625" data-fade></div>
+        <div class="product-card__body"><span class="product-card__category">Western · Men</span><h3 class="product-card__title">Casual & Formal Shirts</h3></div>
+      </a>
+      <a class="product-card" href="#" data-category="footwear" data-reveal data-reveal-delay="40">
+        <div class="product-card__frame"><img src="https://placehold.co/500x625/8C3F2C/FBFAF6?text=Juttis" alt="Juttis and mojaris" loading="lazy" width="500" height="625" data-fade></div>
+        <div class="product-card__body"><span class="product-card__category">Footwear</span><h3 class="product-card__title">Juttis & Mojaris</h3></div>
+      </a>
+      <a class="product-card" href="#" data-category="footwear" data-reveal data-reveal-delay="80">
+        <div class="product-card__frame"><img src="https://placehold.co/500x625/1E2A3D/ECE8DE?text=Sneakers" alt="Sneakers and canvas shoes" loading="lazy" width="500" height="625" data-fade></div>
+        <div class="product-card__body"><span class="product-card__category">Footwear</span><h3 class="product-card__title">Sneakers & Canvas Shoes</h3></div>
+      </a>
+    </div>
+
+    <div class="empty-state" style="display:none">
+      <svg class="empty-state__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18l-2 13H5z"/><path d="M8 10V6a4 4 0 0 1 8 0v4"/></svg>
+      <h3>Nothing here yet</h3>
+      <p>We get new stock every week — check back soon, or message us on WhatsApp and we'll let you know when it lands.</p>
+    </div>
+  </section>
+
+  <section class="container section--tight">
+    <div class="cta-banner" data-reveal>
+      <span class="eyebrow">Not sure about sizing?</span>
+      <h2>Can't find your size? Message us on WhatsApp.</h2>
+      <a class="btn btn--primary" href="https://wa.me/917905331239" target="_blank" rel="noopener">Chat With Us</a>
+    </div>
+  </section>
+</main>
+
+<!-- Size Guide modal -->
+<div class="modal-overlay" id="sizeGuideModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="sizeGuideTitle">
+    <div class="modal__header">
+      <div>
+        <span class="eyebrow">Fit reference</span>
+        <h2 id="sizeGuideTitle" style="margin-top:4px">Size Guide</h2>
+      </div>
+      <button class="modal__close" data-modal-close aria-label="Close size guide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="size-tabs" role="tablist" aria-label="Size chart by category">
+      <button class="chip" data-size-tab="women" aria-pressed="true">Women</button>
+      <button class="chip" data-size-tab="men" aria-pressed="false">Men</button>
+    </div>
+
+    <table class="size-table" data-size-panel="women">
+      <thead><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Hip (in)</th></tr></thead>
+      <tbody>
+        <tr><td>XS</td><td>32–33</td><td>25–26</td><td>35–36</td></tr>
+        <tr><td>S</td><td>34–35</td><td>27–28</td><td>37–38</td></tr>
+        <tr><td>M</td><td>36–37</td><td>29–30</td><td>39–40</td></tr>
+        <tr><td>L</td><td>38–40</td><td>31–33</td><td>41–43</td></tr>
+        <tr><td>XL</td><td>41–43</td><td>34–36</td><td>44–46</td></tr>
+      </tbody>
+    </table>
+    <table class="size-table" data-size-panel="men" hidden>
+      <thead><tr><th>Size</th><th>Chest (in)</th><th>Waist (in)</th><th>Neck (in)</th></tr></thead>
+      <tbody>
+        <tr><td>S</td><td>36–38</td><td>30–32</td><td>14.5–15</td></tr>
+        <tr><td>M</td><td>39–41</td><td>33–35</td><td>15.5–16</td></tr>
+        <tr><td>L</td><td>42–44</td><td>36–38</td><td>16.5–17</td></tr>
+        <tr><td>XL</td><td>45–47</td><td>39–41</td><td>17.5–18</td></tr>
+        <tr><td>XXL</td><td>48–50</td><td>42–44</td><td>18.5–19</td></tr>
+      </tbody>
+    </table>
+    <p class="field" style="margin-top:var(--space-5)"><span class="hint">Between sizes, or fabric-specific? Message us on <a href="https://wa.me/917905331239" style="color:var(--color-madder)">WhatsApp</a> with your measurements — we'll help you pick.</span></p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../index.html" class="navbar__logo">D Fashion Mart</a>
+        <p>Your local destination for ethnic wear, western wear, and footwear — for the whole family.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="D Fashion Mart on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="D Fashion Mart on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://wa.me/917905331239" aria-label="D Fashion Mart on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L4 20l1.03-4.46A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 10a1 1 0 0 0 1 1 3 3 0 0 0 3 3 1 1 0 0 0 1-1"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul></div>
+      <div><h4>Visit</h4><ul>
+        <li>NH 27, near Corporation Bank,<br>Junab Ganj, Sarai Sahjadi, U.P. 226401</li>
+        <li><a href="tel:+917905331239">+91 79053 31239</a></li>
+        <li><a href="mailto:ganuj4769@gmail.com">ganuj4769@gmail.com</a></li>
+      </ul></div>
+      <div><h4>Store Hours</h4><ul>
+        <li>Open daily: 9:00 AM – 9:00 PM</li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> D Fashion Mart. All rights reserved.</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<a class="fab-whatsapp" href="https://wa.me/917905331239" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L4 20l1.03-4.46A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 10a1 1 0 0 0 1 1 3 3 0 0 0 3 3 1 1 0 0 0 1-1"/></svg>
+</a>
+<button class="fab-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- Mobile-only sticky CTA bar (replaces the round WhatsApp button under 640px) -->
+<div class="mobile-cta-bar" role="group" aria-label="Quick contact">
+  <a href="tel:+917905331239">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a href="https://wa.me/917905331239" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L4 20l1.03-4.46A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 10a1 1 0 0 0 1 1 3 3 0 0 0 3 3 1 1 0 0 0 1-1"/></svg>
+    WhatsApp
+  </a>
+</div>
+<div class="loading-screen" aria-hidden="true"><span class="loading-screen__mark">D Fashion Mart<span style="color:var(--color-madder)">.</span></span></div>
+
+<script src="../utils/dom-helpers.js" defer></script>
+<script src="../js/main.js" defer></script>
+<script defer>document.addEventListener('DOMContentLoaded', function () { document.getElementById('year').textContent = new Date().getFullYear(); });</script>
+</body>
+</html>

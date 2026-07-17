@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /pages/privacy.html
+
+Sitemap: /sitemap.xml

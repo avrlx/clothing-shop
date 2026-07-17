@@ -1,0 +1,23 @@
+{
+  "name": "d-fashion-mart",
+  "version": "1.0.0",
+  "description": "D Fashion Mart — an apparel & clothing retailer website. Static HTML/CSS/JS frontend served by a minimal Express backend.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "keywords": ["clothing-shop", "local-business", "boutique", "internship-project"],
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
