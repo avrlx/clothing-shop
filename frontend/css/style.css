@@ -565,13 +565,43 @@ em, .accent-italic { font-style: italic; color: var(--color-madder); font-family
 .reviews-scroller .review-card { min-width: 82%; scroll-snap-align: start; }
 .reviews-scroller::-webkit-scrollbar { display: none; }
 
+/* Mobile-first card grids: Home/Collections/Gallery cards had NO column
+   rule below 640px at all — they only picked up columns starting at the
+   640px query, so on every phone width they silently fell back to a
+   single full-width column. Combined with each card's aspect-ratio
+   (3/4 for categories, 4/5 for products), a full-width card is close to
+   screen height — that's the "one card fills the screen" bug. Making
+   2 columns the actual base/default (not gated behind any media query)
+   fixes it at every phone width tested (320–414px) without needing a
+   separate small-mobile breakpoint. */
+.categories-grid, .products-grid, .gallery-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+.gallery-card {
+  /* No aspect-ratio existed here before — height came purely from each
+     source image's own intrinsic ratio (they range from 500×500 to
+     500×700 in the markup). At full mobile width that's what let the
+     tallest photos balloon into oversized cards; a fixed ratio keeps
+     every gallery card the same compact, predictable height regardless
+     of the source image's own proportions. */
+  aspect-ratio: 4 / 5;
+}
+@media (max-width: 767px) {
+  /* category-card__label padding (space-5 = 24px each side) was sized
+     for full-width desktop cards; at half-card mobile width it eats
+     disproportionately into the text area. Tightened, not shrunk — the
+     font-size is untouched. */
+  .category-card__label { padding: var(--space-3) var(--space-4); }
+}
+
 /* ---------- 15. RESPONSIVE ---------- */
 @media (min-width: 640px) {
   .values-grid { grid-template-columns: repeat(3, 1fr); }
   .owner-note { grid-template-columns: auto 1fr; text-align: left; }
-  .categories-grid { grid-template-columns: repeat(2, 1fr); }
-  .products-grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+  .categories-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
+  .products-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: var(--space-6); }
 }
 
 /* Tablet step: 2-column grids from the 640px rule above feel sparse on a
