@@ -748,12 +748,41 @@ img[data-fade].is-loaded { opacity: 1; }
   h1 { letter-spacing: -.01em; }
   .hero { padding-top: var(--space-6); padding-bottom: var(--space-7); }
   .navbar__actions .navbar__call { display: none; }
-  .filter-bar { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
-  .filter-bar::-webkit-scrollbar { display: none; }
   /* The newsletter input's min-width:200px plus the Join button can get
      tight below ~360px — flex-wrap already prevents overflow, but this
      stacks it as one clean full-width column instead of an uneven wrap. */
   .newsletter form { flex-direction: column; align-items: stretch; }
   .newsletter input[type="email"] { min-width: 0; width: 100%; }
   .newsletter .btn--tag { width: 100%; justify-content: center; }
+}
+
+/* ---- Collections page: mobile filter bar + header spacing ----
+   The filter bar previously forced flex-wrap:nowrap + overflow-x:auto
+   below 640px, packing all 6 chips AND the Size Guide button into one
+   un-wrapped, horizontally-scrolling row. That's what pinned Size Guide
+   off past the right edge (reachable only by scrolling the row) and made
+   it read as leftover desktop positioning instead of a mobile layout.
+   Switching back to normal wrap lets chips flow onto multiple lines and
+   Size Guide sit naturally below them, in normal document flow — no
+   overflow, no absolute positioning needed. Scoped to <768px per spec. */
+@media (max-width: 767px) {
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    overflow-x: visible;
+    gap: var(--space-3);
+    padding-block: var(--space-4);
+  }
+  .filter-bar::-webkit-scrollbar { display: none; }
+  .filter-bar > .flex { flex-wrap: wrap; row-gap: var(--space-2); }
+  .filter-bar .btn--ghost { align-self: flex-start; }
+  /* Collections-only: the breadcrumb + page-header combo used its
+     desktop-spacious padding (space-6/space-7, ~48–64px each) on mobile
+     too, stacking into ~220px of empty space above the filters before any
+     real content appeared. Tightened on this page only via the
+     .page-collections body class — breadcrumb and page-header are shared
+     components used on other pages, which are left untouched. */
+  .page-collections .breadcrumb { padding-block: var(--space-3) var(--space-2); }
+  .page-collections .page-header { padding-top: var(--space-2); padding-bottom: var(--space-4); }
 }
